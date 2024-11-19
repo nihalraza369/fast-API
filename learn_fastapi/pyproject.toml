@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "fastapi_classes"
+name = "learn-fastapi"
 version = "0.1.0"
 description = ""
 authors = ["nihalraza369 <nihalraza369@gmail.com>"]
@@ -7,10 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
 fastapi = "^0.115.5"
-uvicorn = {extras = ["standerd"], version = "^0.32.0"}
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+dev="learn_fastapi.main:start"
